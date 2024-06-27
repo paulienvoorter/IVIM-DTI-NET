@@ -1,0 +1,13 @@
+name: ivimdti
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - matplotlib=3.7.0
+  - nibabel=5.1.0
+  - numpy=1.23.5
+  - python=3.10.9
+  - pytorch=1.12.1
+  - tqdm
+
