@@ -21,7 +21,7 @@ Paulien Voorter paulien.voorter@gmail.com | p.voorter@maastrichtuniversity.nl | 
 
 ## Acknowledgement
 
-Note that this code is build upon previous repositories, and I would like to them these authors for sharing their code:
+Note that this code is build upon previous repositories, and I would like to the authors for sharing their code:
 
 June 2021        Oliver Gurney-Champion and Misha Kaandorp https://github.com/oliverchampion/IVIMNET
 
