@@ -12,7 +12,7 @@ After your network is trained, it is being saved in the folder 'trained_networks
 Now, you can run predict_IVIM-DTI_parameters.py, which loads the trained network en predict all IVIM-DTI model parameters. 
 
 ## Create conda environment
-To directly run the code, we added a '.yml' file which can be run in anaconda. To create a conda environment with the '.yml' file enter the command below in the terminal: conda env create -f environment.yml 
+To directly run the code, we added a '.yml' file which can be run in anaconda. To create a conda environment with the '.yml' file, enter the command in the terminal (e.g. Anaconda Powershell Prompt): conda env create -f environment.yml 
 
 This now creates an environment called 'ivimdti' that can be activated by: conda activate ivim
 
