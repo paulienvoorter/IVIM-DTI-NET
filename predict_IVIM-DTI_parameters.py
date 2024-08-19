@@ -18,9 +18,8 @@ from hyperparams import hyperparams as hp
 import download_data
 
 ### download data from zenodo if it is nonexisting
-download_data.download_data()
-
-
+if not os.path.exists('data/subject01'):
+    download_data.download_data()
 
 torch.manual_seed(0)
 np.random.seed(0)

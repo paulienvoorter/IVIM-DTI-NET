@@ -9,7 +9,7 @@ train_network.py --> trains a selfsupervised physics-informed neural network usi
 
 After your network is trained, it is being saved in the folder 'trained_networks', and you can observe the corresponding loss curve in the folder 'plots'
 
-Now, you can run predict_IVIM-DTI_parameters.py, which loads the trained network en predict all IVIM-DTI model parameters. 
+Now, you can run predict_IVIM-DTI_parameters.py, which loads the trained network and predicts all IVIM-DTI model parameters. The IVIM-DTI parameter maps are saved in 'data/subject01/parammaps_IVIM-DTI-NET' as *.nii files having the same image space as the diffusion images. You can use a nifti viewer to see the paramater maps, (e.g., fsleyes).
 
 ## Create conda environment
 To directly run the code, we added a '.yml' file which can be run in anaconda. To create a conda environment with the '.yml' file, enter the command in the terminal (e.g. Anaconda Powershell Prompt): conda env create -f environment.yml 
@@ -21,7 +21,7 @@ Paulien Voorter paulien.voorter@gmail.com | p.voorter@maastrichtuniversity.nl | 
 
 ## Acknowledgement
 
-Note that this code is build upon previous repositories, and I would like to the authors for sharing their code:
+Note that this code is build upon previous repositories, and I would like to thank the authors for sharing their code:
 
 June 2021        Oliver Gurney-Champion and Misha Kaandorp https://github.com/oliverchampion/IVIMNET
 

@@ -10,4 +10,5 @@ dependencies:
   - python=3.10.9
   - pytorch=1.12.1
   - tqdm
+  - zenodo_get
 
