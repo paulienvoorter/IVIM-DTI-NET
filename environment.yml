@@ -8,7 +8,7 @@ dependencies:
   - nibabel=5.1.0
   - numpy=1.23.5
   - python=3.10.9
-  - pytorch=1.12.1
+  - pytorch=2.3
   - tqdm
   - zenodo_get
 
