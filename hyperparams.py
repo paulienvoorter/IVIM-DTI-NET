@@ -4,7 +4,7 @@ June 2024 by Paulien Voorter
 paulien.voorter@gmail.com 
 https://www.github.com/paulienvoorter
 
-Code is uploaded as part of our paper: 'Diffusion-derived intravoxel-incoherent motion anisotropy relates to cerebrospinal fluid and blood flow'
+Code is uploaded as part of our paper in MRM: 'Diffusion-derived intravoxel-incoherent motion anisotropy relates to CSF and blood flow'
 
 """
 import torch
@@ -24,7 +24,7 @@ class train_pars:
         self.scheduler = False # LR is important. This approach allows to reduce the LR itteratively when there is no improvement throughout an 5 consecutive epochs
         # use GPU if available
         self.use_cuda = torch.cuda.is_available()
-        self.device = torch.device("cuda:0" if self.use_cuda else "cpu")
+        self.device = self.device = torch.device("cpu") #torch.device("cuda:0" if self.use_cuda else "cpu") --> using gpu should work as well, but I was not able to test this.
         self.select_best = True
 
 

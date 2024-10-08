@@ -5,7 +5,7 @@ June 2024 by Paulien Voorter
 paulien.voorter@gmail.com 
 https://www.github.com/paulienvoorter
 
-Code is uploaded as part of our paper: 'Diffusion-derived intravoxel-incoherent motion anisotropy relates to cerebrospinal fluid and blood flow'
+Code is uploaded as part of our paper in MRM: 'Diffusion-derived intravoxel-incoherent motion anisotropy relates to CSF and blood flow'
 
 """
 

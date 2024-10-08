@@ -1,6 +1,6 @@
 # IVIM-DTI-NET
 
-This repository contains the code regarding our paper: Diffusion-derived intravoxel-incoherent motion anisotropy relates to cerebrospinal fluid and blood flow 
+This repository contains the code regarding our paper in MRM: Diffusion-derived intravoxel-incoherent motion anisotropy relates to CSF and blood flow 
 
 ## Description
 The aim of this repository is to enable you to use our IVIM-DTI-NET relatively easily on your own multi-b-value multi-directional diffusion-weighted data. 

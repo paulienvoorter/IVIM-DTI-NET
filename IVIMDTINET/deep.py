@@ -38,7 +38,7 @@ class Net(nn.Module):
         self.bvec = bvec
         self.bval = bval
         self.net_pars = net_pars
-        if self.net_pars.width is 0:
+        if self.net_pars.width == 0:
             self.net_pars.width = len(bval)
         # define module lists. If network is not parallel, we can do with 1 list, otherwise we need a list per parameter
         self.fc_layers0 = nn.ModuleList()
@@ -66,7 +66,7 @@ class Net(nn.Module):
             self.fc_layers2.extend([nn.ELU()])
             self.fc_layers3.extend([nn.ELU()])
             # if dropout is desired, add dropout regularisation
-            if self.net_pars.dropout is not 0 and i is not (self.net_pars.depth - 1):
+            if self.net_pars.dropout != 0 and i != (self.net_pars.depth - 1):
                 self.fc_layers0.extend([nn.Dropout(self.net_pars.dropout)])
                 self.fc_layers1.extend([nn.Dropout(self.net_pars.dropout)])
                 self.fc_layers2.extend([nn.Dropout(self.net_pars.dropout)])
@@ -354,6 +354,9 @@ def predict_IVIM(data, bval, bvec, net, arg):
     net.eval()
     
     # initialise parameters and data
+    bval = torch.FloatTensor(bval[:]).to(arg.train_pars.device)
+    bvec = torch.FloatTensor(bvec[:]).to(arg.train_pars.device)
+    net = Net(bval, bvec, arg.net_pars).to(arg.train_pars.device)
     U1 = np.array([])
     U2 = np.array([])
     U3 = np.array([])
