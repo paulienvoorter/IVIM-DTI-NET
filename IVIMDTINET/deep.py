@@ -356,7 +356,7 @@ def predict_IVIM(data, bval, bvec, net, arg):
     # initialise parameters and data
     bval = torch.FloatTensor(bval[:]).to(arg.train_pars.device)
     bvec = torch.FloatTensor(bvec[:]).to(arg.train_pars.device)
-    net = Net(bval, bvec, arg.net_pars).to(arg.train_pars.device)
+
     U1 = np.array([])
     U2 = np.array([])
     U3 = np.array([])
